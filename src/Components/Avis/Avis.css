@@ -1,0 +1,347 @@
+/* ------------------------------------------------------------------ */
+/* h. Avis Section
+/* ------------------------------------------------------------------ */
+#avis {
+  position: relative;
+  overflow: hidden;
+}
+
+#avis .container {
+  height: 220px;
+}
+
+.avisTitre {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16pt;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+/* Background Image */
+.block2 {
+  justify-content: center;
+  align-items: center;
+}
+.block2 h1 {
+  position: relative;
+  z-index: 1;
+}
+.block_2 {
+  background: url(../../assets/images/image_avis.jpg);
+  background-attachment: scroll;
+  background-clip: border-box;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-origin: padding-box;
+  background-repeat: repeat;
+  z-index: 0;
+}
+
+.block_2:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.zoom {
+  animation: zoom 15s ease 0s normal both infinite;
+  -webkit-animation: zoom 15s ease 0s normal both infinite;
+  -moz-animation: zoom 15s ease 0s normal both infinite;
+  -ms-animation: zoom 15s ease 0s normal both infinite;
+  -o-animation: zoom 15s ease 0s normal both infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* End Background Image */
+
+#avis .jumbotron {
+  padding: 2.99rem 2.99rem !important;
+}
+
+.messageText {
+  font-size: "20pt";
+  letter-spacing: "1px";
+  color: #607d8b;
+}
+
+/* Card Avis */
+#avis .title {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#avis .icon {
+  position: relative;
+  bottom: 11px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+#avis .profile img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+#avis .card {
+  background-color: rgba(60, 59, 63, 0.8);
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  height: 170px !important;
+  width: 350px;
+}
+
+#avis .card-body {
+  position: relative;
+  bottom: 35px;
+}
+.profile {
+  position: relative;
+  bottom: -168px;
+  left: 55px;
+}
+.user-name {
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 600;
+}
+#avis .text-muted {
+  color: #fff !important;
+  font-size: 13pt;
+}
+/* End card avis */
+
+#avis .carousel {
+  height: 105px;
+}
+
+#avis .carousel .carousel-item {
+  width: 100%;
+  height: 34rem;
+}
+
+#avis .carousel-caption {
+  top: 0rem;
+  bottom: 143rem;
+  z-index: 10;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* carousel-control */
+.cid-c2 .carousel-control-next,
+.cid-c2 .carousel-control-prev {
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  margin-top: -1.5rem;
+
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+
+  z-index: 100;
+}
+
+.cid-c2 .carousel-control-prev {
+  left: 0;
+  margin-left: -2.5rem;
+}
+.cid-c2 .carousel-control-next {
+  right: 0;
+  margin-right: -2.5rem;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1024px) {
+  #avis .card {
+    width: 386px;
+    margin-left: 0px !important;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #avis .card {
+    width: 386px;
+    margin-left: 0px !important;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #avis .card {
+    width: 340px;
+    margin-left: 0px !important;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #avis .card {
+    width: 280px;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #avis .card {
+    width: 250px;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #avis .card {
+    width: 188px;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .avisTitre {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #avis .card {
+    width: 166px;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .user-name {
+    height: 100px;
+    font-size: 10pt;
+  }
+  .avisTitre {
+    font-size: 10pt;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #avis .card {
+    width: 130px;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .user-name {
+    height: 100px;
+    font-size: 10pt;
+  }
+  .profile {
+    position: relative;
+    bottom: -180px;
+    left: 15px;
+  }
+  #avis .profile img {
+    width: 48px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .avisTitre {
+    font-size: 10pt;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #avis .card {
+    width: 100px;
+  }
+  #avis .carousel-caption {
+    top: 0rem;
+    bottom: 143rem;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .user-name {
+    height: 100px;
+    font-size: 8pt;
+  }
+  .profile {
+    position: relative;
+    bottom: -180px;
+    left: 15px;
+  }
+  #avis .profile img {
+    width: 38px;
+    height: auto;
+    border-radius: 50%;
+  }
+  #avis .text-muted {
+    font-size: 10pt;
+  }
+  .avisTitre {
+    font-size: 10pt;
+  }
+}

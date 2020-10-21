@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap);
+.slogon-title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.text-orange {
+  color: #ffa82c;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.display-2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem !important;
+  font-display: swap;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+#accueil .carousel {
+  margin-bottom: 0.8rem;
+}
+
+.cid-c1 .carousel-item .container.container-slide {
+  position: initial;
+  width: auto;
+  min-height: 0;
+}
+
+.mbr-overlay {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.3;
+  background-color: "rgb(70, 80, 82)";
+}
+.cid-c1 .carousel-caption {
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  display: flex;
+  align-items: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.cid-c1 .slider-fullscreen-image {
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.cid-c1 .slider-fullscreen-image.active {
+  display: -o-flex;
+}
+
+/* carousel-control */
+.cid-c1 .carousel-control-next,
+.cid-c1 .carousel-control-prev {
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -1.5rem;
+  z-index: 100;
+}
+
+.cid-c1 .carousel-control-prev {
+  left: 0;
+  margin-left: 0.5rem;
+}
+.cid-c1 .carousel-control-next {
+  right: 0;
+  margin-right: 0.5rem;
+}
+
+#accueil .carousel .carousel-item {
+  width: 100%;
+  height: 34rem;
+  background-size: cover;
+  background-position: center;
+}
+
+#accueil .carousel .carousel-item:first-of-type {
+  background-image: url("../../assets/images/slides/slide1.jpg");
+  background-position: 80%;
+}
+
+#accueil .carousel .carousel-item:nth-of-type(2) {
+  background-image: url("../../assets/images/slides/slide2.jpg");
+  background-position: 70%;
+}
+
+#accueil .carousel .carousel-item:last-of-type {
+  background-image: url("../../assets/images/slides/slide3.jpg");
+  background-position: 100%;
+}
+
+.carousel-indicators li {
+  border-radius: 50% !important;
+  background-color: #5caf2c !important;
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-clip: padding-box;
+  border-top: none !important;
+  border-bottom: none !important;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+/* Media queries */
+
+/*xlmax-device*/
+@media only screen and (min-width: 1200px) and (max-width: 1599.98px) {
+  .arrow {
+    width: 45px;
+  }
+}
+/* xl-device  */
+@media only screen and (min-width: 1200px) {
+  .arrow {
+    width: 45px;
+  }
+}
+
+/* l-device */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .arrow {
+    width: 45px;
+  }
+}
+/* lg-device */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .arrow {
+    width: 40px;
+  }
+}
+/* md-device */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .arrow {
+    width: 38px;
+  }
+}
+/* sm-device  */
+@media only screen and (max-width: 767.98px) {
+  .arrow {
+    width: 32px;
+  }
+  /* carousel-control */
+  .cid-c1 .carousel-control-next,
+  .cid-c1 .carousel-control-prev {
+    top: auto;
+    bottom: 1rem;
+  }
+
+  .display-2 {
+    font-size: 2.4rem;
+    font-size: calc(1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc(
+      1.4 * (1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)))
+    );
+  }
+}
+/* xs-device  */
+@media only screen and (max-width: 575.98px) {
+  .arrow {
+    width: 32px;
+  }
+
+  /* carousel-indicators */
+  .cid-c1 .carousel-indicators {
+    display: none;
+  }
+}
+/* xxs-device */
+@media only screen and (max-width: 479.98px) {
+  .arrow {
+    width: 32px;
+  }
+  .display-2 {
+    font-size: 2rem !important;
+    font-size: calc(
+      1.29rem + (3 - 1.29) * ((100vw - 20rem) / (48 - 20))
+    ) !important;
+    line-height: calc(
+      1.29 * (1.29rem + (3 - 1.2) * ((100vw - 20rem) / (48 - 20)))
+    ) !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .display-2 {
+    font-size: 1.6rem !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .display-2 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .display-2 {
+    font-size: 1.1rem !important;
+  }
+}

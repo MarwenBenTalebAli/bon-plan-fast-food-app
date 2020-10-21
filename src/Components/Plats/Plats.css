@@ -1,0 +1,168 @@
+/* ------------------------------------------------------------------ */
+/* Plats Section
+/* ------------------------------------------------------------------ */
+#plats {
+  background: #eeeeee;
+  padding-top: 0px;
+  padding-bottom: 72px;
+}
+
+.platsTitreLien {
+  color: #ffa82c;
+  text-transform: uppercase;
+  font-size: 12pt;
+  letter-spacing: 2px;
+  font-weight: 800;
+  padding-top: 30px;
+}
+
+#plats a,
+#plats a:visited {
+  color: #11abb0;
+}
+#plats a:hover,
+#plats a:focus {
+  color: #313131;
+}
+
+/* Cards */
+.card {
+  height: 376px;
+  width: 250px;
+}
+
+.card .image-container {
+  position: relative;
+  text-align: center;
+}
+.card .top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.cardTitre {
+  font: 16pt/30px "opensans-bold", sans-serif;
+}
+
+.cardDescription {
+  font-size: 14pt !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: #757575;
+}
+
+.cardPrix {
+  font-size: 14pt;
+  font-weight: 800;
+}
+
+.cardPrixIcone {
+  font-size: 14pt;
+}
+
+#plats img {
+  height: 150px;
+  width: 100%;
+}
+
+#plats .card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+#plats .card-title {
+  font-size: 13pt;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#plats .card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#plats .card::before,
+#plats .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+#plats .card::before {
+  transform-origin: left top;
+}
+#plats .card::after {
+  transform-origin: right bottom;
+}
+#plats .card:hover::before,
+#plats .card:hover::after,
+#plats .card:focus::before,
+#plats .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.card-footer {
+  background-color: white !important;
+  border-top: none !important;
+}
+#plats .card p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+/* End of Cards */
+
+/* Media queries */
+/*xlmax-device*/
+@media only screen and (min-width: 1200px) and (max-width: 1599.98px) {
+}
+/* xl-device  */
+@media only screen and (min-width: 1200px) {
+}
+
+/* l-device */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .card {
+    width: 218px;
+  }
+  #plats img {
+    height: auto;
+    width: 217px;
+  }
+}
+/* lg-device */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .card {
+    width: 218px;
+  }
+  #plats img {
+    height: auto;
+    width: 217px;
+  }
+}
+/* md-device */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .card {
+    width: 320px;
+  }
+  #plats img {
+    height: auto;
+    width: 319px;
+  }
+}
+/* sm-device  */
+@media only screen and (max-width: 767.98px) {
+}
+/* xs-device  */
+@media only screen and (max-width: 575.98px) {
+}
+/* xxs-device */
+@media only screen and (max-width: 479.98px) {
+}

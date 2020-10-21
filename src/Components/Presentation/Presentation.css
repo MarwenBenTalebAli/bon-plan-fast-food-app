@@ -1,0 +1,184 @@
+/* ------------------------------------------------------------------ */
+/* 2. Presentation Section
+/* ------------------------------------------------------------------ */
+#presentation {
+  background: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* overflow: hidden; */
+}
+
+/* Center align the text within the three columns below the carousel */
+.presentation .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.presentation h1 {
+  font-weight: bold;
+}
+.presentation .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.presentation-heading {
+  color: #ffa82c;
+  text-transform: uppercase;
+  line-height: 0.8;
+  font-family: "opensans-bold", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.13rem;
+}
+
+.presentation-text-description {
+  color: #acacac;
+  font: 16pt/30px "opensans-bold", sans-serif;
+}
+
+.presentation-text-lien {
+  color: rgba(255, 167, 44, 0.616);
+  font: 16pt/30px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+#presentation h1 {
+  margin-bottom: 6px;
+}
+
+#presentation h2 {
+  margin-bottom: 6px;
+}
+
+/* IMAGE */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* @media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+} */
+/* END IMAGE */
+
+/* Media queries */
+
+/*xlmax-device*/
+@media only screen and (min-width: 1200px) and (max-width: 1599.98px) {
+  .presentation-heading {
+    font-size: 30pt;
+  }
+  .presentation-text-description {
+    font-size: 22pt;
+  }
+  .presentation-text-lien {
+    font-size: 18pt;
+  }
+}
+/* xl-device  */
+@media only screen and (min-width: 1200px) {
+  .presentation-heading {
+    font-size: 28pt;
+  }
+  .presentation-text-description {
+    font-size: 20pt;
+  }
+  .presentation-text-lien {
+    font-size: 18pt;
+  }
+}
+
+/* l-device */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .presentation-heading {
+    font-size: 28pt;
+  }
+  .presentation-text-description {
+    font-size: 20pt;
+  }
+  .presentation-text-lien {
+    font-size: 18pt;
+  }
+}
+/* lg-device */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .presentation-heading {
+    font-size: 16pt;
+  }
+  .presentation-text-description {
+    font-size: 14pt;
+  }
+  .presentation-text-lien {
+    font-size: 14pt;
+  }
+}
+/* md-device */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .presentation-heading {
+    font-size: 14pt;
+  }
+  .presentation-text-description {
+    font: 12pt/22px "opensans-bold", sans-serif;
+  }
+  .presentation-text-lien {
+    font: 12pt/22px "opensans-bold", sans-serif;
+  }
+}
+/* sm-device  */
+@media only screen and (max-width: 767.98px) {
+  .presentation-heading {
+    font-size: 14pt;
+  }
+  .presentation-text-description {
+    font-size: 12pt;
+  }
+  .presentation-text-lien {
+    font-size: 12pt;
+  }
+}
+/* xs-device  */
+@media only screen and (max-width: 575.98px) {
+}
+/* xxs-device */
+@media only screen and (max-width: 479.98px) {
+  .presentation-heading {
+    font-size: 19pt;
+  }
+  .presentation-text-description {
+    font-size: 15pt;
+  }
+  .presentation-text-lien {
+    font-size: 15pt;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .presentation-heading {
+    font-size: 17pt;
+  }
+  .presentation-text-description {
+    font-size: 14pt;
+  }
+  .presentation-text-lien {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .presentation-heading {
+    font-size: 14pt;
+  }
+  .presentation-text-description {
+    font-size: 12pt;
+  }
+  .presentation-text-lien {
+    font-size: 8pt;
+  }
+}
